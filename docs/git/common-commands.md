@@ -12,6 +12,9 @@ git push <remote> <branch>
 
 # 推送所有分支代码
 git push
+
+##
+git push -u
 ```
 
 ## 查看git所有配置
