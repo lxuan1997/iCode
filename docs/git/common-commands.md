@@ -42,7 +42,7 @@ git remote add <shortname> <url>
 
 ### 重命名
 ```bash
-git remote rename <shortname1> <shortname2>
+git remote rename <old_shortname> <new_shortname>
 ```
 
 ### 移除
@@ -75,7 +75,7 @@ git checkout -b <branch>
 
 ### 删除分支
 ```bash
-git checkout -d <branch>
+git branch -d <branch>
 
 ```
 
