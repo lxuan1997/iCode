@@ -75,8 +75,11 @@ git checkout -b <branch>
 
 ### 删除分支
 ```bash
+# 本地删除
 git branch -d <branch>
 
+# 远程删除
+git push <shortname> -d <branch>
 ```
 
 ### 合并分支
