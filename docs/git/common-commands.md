@@ -7,8 +7,11 @@ git pull
 
 ## 推送
 ```bash
-git push
+# 推动<branch>分支代码至<remote>仓库，如 git push origin master 
 git push <remote> <branch>
+
+# 推送所有分支代码
+git push
 ```
 
 ## 查看git所有配置
@@ -21,22 +24,31 @@ git config --list
 git status
 git status -s
 ```
-## 远程仓库
 
-### 查看远程仓库
+## 远程仓库
+::: tip
+shortname 仓库简写  url 仓库地址
+:::
+### 查看
 ```bash
 git remote
 git remote -v
 ```
 
-### 添加远程仓库
+### 添加
 ```bash
-# shortname 仓库简写
-# url 仓库地址
 git remote add <shortname> <url>
-
 ```
 
+### 重命名
+```bash
+git remote rename <shortname1> <shortname2>
+```
+
+### 移除
+```bash
+git remote remove <shortname>
+```
 
 ## 分支
 
