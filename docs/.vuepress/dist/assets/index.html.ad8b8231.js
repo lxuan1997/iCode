@@ -1,1 +1,0 @@
-import{_ as a,o as t,c as o,a as e,b as r}from"./app.fb10cf0d.js";const c={},n=e("h1",{id:"hello",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#hello","aria-hidden":"true"},"#"),r(" Hello")],-1),s=[n];function l(_,d){return t(),o("div",null,s)}var h=a(c,[["render",l],["__file","index.html.vue"]]);export{h as default};
