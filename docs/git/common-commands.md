@@ -21,12 +21,22 @@ git config --list
 git status
 git status -s
 ```
+## 远程仓库
 
-## 查看远程仓库
+### 查看远程仓库
 ```bash
 git remote
 git remote -v
 ```
+
+### 添加远程仓库
+```bash
+# shortname 仓库简写
+# url 仓库地址
+git remote add <shortname> <url>
+
+```
+
 
 ## 分支
 
