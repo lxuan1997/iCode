@@ -25,24 +25,24 @@ jobs:
           node-version: '14'
       
       # 缓存 node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v2
-        id: npm-cache
-        with:
-          path: |
-            **/node_modules
-          key: ${{ runner.os }}-npm-${{ hasFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
+      # - name: Cache dependencies
+      #   uses: actions/cache@v3
+      #   id: cache-npm
+      #   with:
+      #     path: |
+      #       **/node_modules
+      #     key: ${{ runner.os }}-npm-${{ hasFiles('package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-npm-
       
-      # 如果缓存没有命中，安装依赖
-      - name: Install dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm ci
+      # # 如果缓存没有命中，安装依赖
+      # - name: Install dependencies
+      #   if: steps.cache-npm.outputs.cache-hit != 'true'
+      #   run: npm ci
 
       # 运行构建脚本
       - name: Build
-        run: npm run docs:dev
+        run: npm install && npm run docs:build
 
       - name: Depoly to Github Pages
         uses: crazy-max/ghaction-github-pages@v2
