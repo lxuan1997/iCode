@@ -2,11 +2,15 @@ import type { NavbarConfig } from "vuepress";
 
 export const navbar: NavbarConfig = [
   {
-    text: 'Git',
-    link: '/git/'
+    text: 'Vue',
+    link: '/vue'
   },
   {
-    text: 'Github',
-    link: 'https://github.com/lxuan1997/notes'
+    text: 'Echarts',
+    link: '/echarts'
+  },
+  {
+    text: 'Git',
+    link: '/git/'
   }
 ]

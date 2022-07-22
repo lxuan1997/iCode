@@ -6,6 +6,7 @@ export const sidebar: SidebarConfig = {
       text: 'git',
       children: [
         '/git/README.md',
+        '/git/github-tips.md',
         '/git/common-commands.md'
       ]
     }
