@@ -7,9 +7,14 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '',
   description: '',
-  head,
+  head: [
+    ['link', {
+      rel: 'icon',
+      href: '/logo.png'
+    }]
+  ],
   theme: localTheme({
-    logo: `${process.env.NODE_ENV === 'development' ? '' : '/notes'}/logo.png`,
+    logo: '/logo.png',
     sidebar,
     navbar,
   })
