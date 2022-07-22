@@ -1,4 +1,4 @@
-# 一些git常见的操作
+# 一些操作
 
 ## 将本地仓库上传至git
 ```BASH
@@ -30,3 +30,6 @@ git rm -rf .
 git commit --allow-empty -m "Initial commit on orphan branch"
 git push -u origin <new branch>
 ```
+
+## 其他
+- [GitHub仓库快速导入Gitee及同步更新](https://gitee.com/help/articles/4284)

@@ -7,7 +7,8 @@ export const sidebar: SidebarConfig = {
       children: [
         '/git/README.md',
         '/git/github-tips.md',
-        '/git/common-commands.md'
+        '/git/common-commands.md',
+        '/git/common-actions.md'
       ]
     }
   ]

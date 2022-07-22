@@ -7,12 +7,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '',
   description: '',
-  head: [
-    ['link', {
-      rel: 'icon',
-      href: '/logo.png'
-    }]
-  ],
+  head,
   theme: localTheme({
     logo: '/logo.png',
     sidebar,
