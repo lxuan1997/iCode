@@ -2,6 +2,7 @@
   <Layout>
     <template #navbar-after>
       <a class="icon-button" href="https://github.com/lxuan1997/notes" target="_blank" aria-label="View GitHub Repo">
+        <!-- <Icon :icon="icons.githubIcon" width="20" /> -->
         <Icon :icon="icons.githubIcon" width="20" />
       </a>
     </template>
@@ -11,7 +12,8 @@
 <script lang="ts">
 import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 import { Icon } from '@iconify/vue'
-import githubIcon from '@iconify-icons/fe/github';
+// import githubIcon from '@iconify-icons/fe/github';
+
 export default {
   components: {
     Layout,
@@ -20,7 +22,7 @@ export default {
   data() {
     return {
       icons: {
-        githubIcon
+        githubIcon: 'fe:github'
       }
     }
   }
