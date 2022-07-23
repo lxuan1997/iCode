@@ -2,8 +2,10 @@
   <Layout>
     <template #navbar-after>
       <a class="icon-button" href="https://github.com/lxuan1997/notes" target="_blank" aria-label="View GitHub Repo">
-        <!-- <Icon :icon="icons.githubIcon" width="20" /> -->
         <Icon :icon="icons.githubIcon" width="20" />
+      </a>
+      <a class="icon-button" href="https://www.yuque.com/lxuan2497" target="_blank" aria-label="View GitHub Repo">
+        <Icon :icon="icons.yuqueIcon" width="20" />
       </a>
     </template>
   </Layout>
@@ -12,7 +14,6 @@
 <script lang="ts">
 import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 import { Icon } from '@iconify/vue'
-// import githubIcon from '@iconify-icons/fe/github';
 
 export default {
   components: {
@@ -22,7 +23,8 @@ export default {
   data() {
     return {
       icons: {
-        githubIcon: 'fe:github'
+        githubIcon: 'fe:github',
+        yuqueIcon: 'ant-design:yuque-filled'
       }
     }
   }
