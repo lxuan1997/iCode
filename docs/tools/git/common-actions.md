@@ -31,5 +31,19 @@ git commit --allow-empty -m "Initial commit on orphan branch"
 git push -u origin <new branch>
 ```
 
+
+## 查看/修改本地git用户名和邮箱
+```bash
+# 查看用户名
+git config user.name
+# 修改用户名
+git config user.name 'xxx'
+
+# 查看邮箱
+git config user.name
+# 修改邮箱
+git config user.email 'xxx'
+```
+
 ## 其他
 - [GitHub仓库快速导入Gitee及同步更新](https://gitee.com/help/articles/4284)
