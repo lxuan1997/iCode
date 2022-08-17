@@ -1,11 +1,16 @@
 import type { HeadConfig } from "vuepress";
+const baseUrl = process.env.NODE_ENV === 'development' ? '' : '/notes'
 
 export const head: HeadConfig[] = [
   [
     'link', {
       rel: 'icon',
-      href: `${process.env.NODE_ENV === 'development' ? '' : '/notes'}/logo.png`
+      href: `${baseUrl}/logo.png`
     }
+  ],
+  [
+    'link',
+    { rel: 'apple-touch-icon', href: `${baseUrl}/logo.png` },
   ],
   [
     'script', {
