@@ -4,13 +4,13 @@ export const head: HeadConfig[] = [
     [
         'link', {
         rel: 'icon',
-        href: '/images/logo-icon.png'
+        href: '/iCode/images/logo-icon.png'
     }
     ],
     // 添加apple icon
     [
         'link',
-        { rel: 'apple-touch-icon', href: '/images/logo.png' },
+        { rel: 'apple-touch-icon', href: '/iCode/images/logo.png' },
     ],
     [
         'meta',
