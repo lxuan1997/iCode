@@ -10,6 +10,10 @@ export const head: HeadConfig[] = [
     // 添加apple icon
     [
         'link',
-        { rel: 'apple-touch-icon', href: '/images/logo-icon.png' },
+        { rel: 'apple-touch-icon', href: '/images/logo.png' },
+    ],
+    [
+        'meta',
+        {name: 'referrer', content: 'no-referrer'}
     ]
 ]
