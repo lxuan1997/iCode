@@ -1,7 +1,7 @@
 {
-  "name": "vuepress_notes",
+  "name": "icode",
   "version": "1.0.0",
-  "description": "vuepress notes",
+  "description": "hello code",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vuepress dev docs",
