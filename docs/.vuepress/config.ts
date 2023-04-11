@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: '/iCode/',
   lang: 'zh-CN',
   title: '',
-  description: '',
+  description: 'Hello Code',
   head,
   theme: localTheme({
     logo: '/images/logo.png',
