@@ -14,6 +14,13 @@ export default defineUserConfig({
         logoDark: '/images/logo-dark.png',
         sidebar,
         navbar,
+        // repo: 'https://github.com/lxuan1997/iCode',
+        docsRepo: 'https://github.com/lxuan1997/iCode',
+        docsBranch: 'master',
+        docsDir: 'docs',
+        contributors: false,
+        // editLinkText: '编辑此页',
+        // lastUpdatedText: '最近更新'
     }),
     plugins: [
         mdEnhancePlugin({
