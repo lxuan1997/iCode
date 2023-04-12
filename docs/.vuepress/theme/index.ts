@@ -1,6 +1,6 @@
-import type { Theme } from '@vuepress/core'
-import type { DefaultThemeOptions } from '@vuepress/theme-default'
-import { defaultTheme } from '@vuepress/theme-default'
+import type { Theme } from 'vuepress'
+import type {  } from '@vuepress/theme-default'
+import { defaultTheme, type DefaultThemeOptions} from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 
 export const localTheme = (options: DefaultThemeOptions): Theme => {
@@ -8,7 +8,7 @@ export const localTheme = (options: DefaultThemeOptions): Theme => {
     name: 'vuepress-theme-local',
     extends: defaultTheme(options),
     layouts: {
-      Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
+      Layout: path.resolve(__dirname, 'layouts/Layout.vue')
     },
   }
 }

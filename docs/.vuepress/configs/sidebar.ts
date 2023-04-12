@@ -58,6 +58,15 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
             ]
         }
     ],
+    '/fabric/': [
+        {
+            text: 'fabric',
+            children: [
+                '/fabric/index.md',
+                '/fabric/vue.md',
+            ]
+        }
+    ],
     '/tools/git/': [
         {
             text: 'Git',

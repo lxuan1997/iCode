@@ -22,6 +22,10 @@ export const navbar: NavbarConfig = [
         link: '/echarts/'
     },
     {
+        text: 'Fabric.js',
+        link: '/fabric/'
+    },
+    {
         text: 'Nginx',
         link: '/nginx/'
     },

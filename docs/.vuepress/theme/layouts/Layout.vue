@@ -4,9 +4,9 @@
       <a class="icon-button" href="https://github.com/lxuan1997/iCode" target="_blank" aria-label="View GitHub Repo">
         <Icon :icon="icons.githubIcon" width="20" />
       </a>
-      <!--<a class="icon-button" href="https://www.yuque.com/lxuan2497" target="_blank" aria-label="View GitHub Repo">-->
-      <!--  <Icon :icon="icons.yuqueIcon" width="20" />-->
-      <!--</a>-->
+      <a class="icon-button" href="https://www.yuque.com/lxuan2497" target="_blank" aria-label="View GitHub Repo">
+        <Icon :icon="icons.yuqueIcon" width="20" />
+      </a>
     </template>
   </Layout>
 </template>
