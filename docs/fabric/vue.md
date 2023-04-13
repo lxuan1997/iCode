@@ -2,7 +2,7 @@
 
 ## 基本用法
 
-::: vue-playground Vue3-demo
+::: vue-playground vue@3.2.47 + fabric@5.3.0
 
 @file App.vue
 
@@ -66,7 +66,7 @@ function addCircle() {
 <template>
   <canvas id="canvas"/>
 </template>
-```
+``` 
 
 @import
 
@@ -348,10 +348,12 @@ fabric.Object.prototype.toObject = function (additionalProperties) {
 
 - [x] [JELLY | 图形编程 Fabric.js 复合图形实现记录](https://jelly.jd.com/article/6151e9512685d0019947558d)
 - [x] [JELLY | 聊聊 fabric.js Group 对象](https://jelly.jd.com/article/62bd77e952d2600188a9fdac)
-- [ ] 据说v6版本将`Group`功能重构，`Textbox`编辑功能不受`Group`影响，**【待验证】**
-  :::
-  ::: code-tabs#js
-  @tab RectText.class.js
+- [x] v6版本`Group`将重写，`Group`内`Textbox`编辑功能不受影响，[beta预览](http://jsfiddle.net/qxdk4h9L/2/)
+
+:::
+
+::: code-tabs#js
+@tab RectText.class.js
 
 ```js
 import {fabric} from 'fabric'

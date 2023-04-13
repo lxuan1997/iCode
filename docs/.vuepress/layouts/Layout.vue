@@ -1,43 +1,32 @@
 <template>
-  <Layout>
+  <ParentLayout>
     <template #navbar-after>
-      <!--<a class="icon-button" href="https://github.com/lxuan1997/iCode" target="_blank" aria-label="View GitHub Repo">-->
-      <!--  <Icon :icon="icons.githubIcon" width="20" />-->
-      <!--</a>-->
-      <!--<a class="icon-button" href="https://www.yuque.com/lxuan2497" target="_blank" aria-label="View GitHub Repo">-->
-      <!--  <Icon :icon="icons.yuqueIcon" width="20" />-->
-      <!--</a>-->
     </template>
-    <template #page-content-bottom>
+    <template #page-bottom>
+      <CommentService :darkmode="isDarkMode"/>
     </template>
-  </Layout>
+  </ParentLayout>
 </template>
 
-<script lang="ts">
-import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
-import { Icon } from '@iconify/vue'
+<script setup lang="ts">
+import {onUnmounted, onMounted, ref} from "vue";
+import ParentLayout from "@vuepress/theme-default/layouts/Layout.vue";
 
-export default {
-  components: {
-    Layout,
-    Icon
-  },
-  data() {
-    return {
-      icons: {
-        githubIcon: 'fe:github',
-        yuqueIcon: 'ant-design:yuque-filled'
-      }
-    }
-  }
-}
+const isDarkMode = ref(false)
+
+onMounted(() => {
+  const html = document.documentElement;
+  isDarkMode.value = html.classList.contains("dark");
+  // watch theme change
+  const observer = new MutationObserver(() => {
+    isDarkMode.value = html.classList.contains("dark");
+  });
+  observer.observe(html, {
+    attributeFilter: ["class"],
+    attributes: true,
+  });
+  onUnmounted(() => {
+    observer.disconnect();
+  });
+});
 </script>
-
-<style scoped>
-.icon-button {
-  display: flex;
-  align-items: center;
-  margin-left: 1.5rem;
-  color: var(--c-text);
-}
-</style>
