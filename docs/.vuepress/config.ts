@@ -1,6 +1,7 @@
 import {defineUserConfig} from 'vuepress'
 import {mdEnhancePlugin} from "vuepress-plugin-md-enhance";
-import { commentPlugin } from "vuepress-plugin-comment2";
+import {commentPlugin} from "vuepress-plugin-comment2";
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import {sidebar, navbar, head} from './configs'
 import {defaultTheme} from 'vuepress'
 // import { localTheme } from './theme'
@@ -21,9 +22,10 @@ export default defineUserConfig({
         docsDir: 'docs',
         contributors: false,
         // editLinkText: '编辑此页',
-        // lastUpdatedText: '最近更新'
+        // lastUpdatedText: '最近更新',
     }),
     plugins: [
+        // markdown 增强
         mdEnhancePlugin({
             // vue 交互演示
             vuePlayground: true,
@@ -31,17 +33,17 @@ export default defineUserConfig({
             codetabs: true,
             tasklist: true
         }),
-        // waline
+        // comment-Waline
         commentPlugin({
             provider: "Waline",
             serverURL: 'https://waline-for-i-code-k0ivbhlhv-lxuan1997.vercel.app/',
             emoji: [
-                'https://unpkg.com/@waline/emojis@1.1.0/alus',
-                'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
-                'https://unpkg.com/@waline/emojis@1.1.0/qq',
+                // 'https://unpkg.com/@waline/emojis@1.1.0/alus',
+                // 'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+                // 'https://unpkg.com/@waline/emojis@1.1.0/qq',
                 'https://unpkg.com/@waline/emojis@1.1.0/bmoji',
-                'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
-                'https://unpkg.com/@waline/emojis@1.1.0/weibo'
+                // 'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+                // 'https://unpkg.com/@waline/emojis@1.1.0/weibo'
             ],
             // meta: [],
             // reaction: [
@@ -50,7 +52,22 @@ export default defineUserConfig({
             //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
             //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
             // ]
-            pageview: true
-        })
+            // comment: false,
+        }),
+        // comment-Giscus
+        // commentPlugin({
+        //     provider: 'Giscus',
+        //     repo: 'lxuan1997/iCode',
+        //     repoId: 'R_kgDOHsAibQ',
+        //     category: 'General',
+        //     categoryId: 'DIC_kwDOHsAibc4CVvDA'
+        // }),
+        // docsearch
+        docsearchPlugin({
+            // 配置项
+            appId: 'O49ML787DQ',
+            apiKey: 'b9ad9e9ad0b1e6bdaf5ba089a825f1f3',
+            indexName: 'demo',
+        }),
     ]
 })
