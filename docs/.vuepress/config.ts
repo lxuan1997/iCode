@@ -1,28 +1,24 @@
 import {defineUserConfig} from 'vuepress'
 import {mdEnhancePlugin} from "vuepress-plugin-md-enhance";
 import {commentPlugin} from "vuepress-plugin-comment2";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch';
+import {docsearchPlugin} from '@vuepress/plugin-docsearch';
 import {sidebar, navbar, head} from './configs'
 import {defaultTheme} from 'vuepress'
-// import { localTheme } from './theme'
 export default defineUserConfig({
     base: '/iCode/',
     lang: 'zh-CN',
-    title: '',
-    description: 'Hello Code',
+    title: 'Hello Code',
+    description: ' ',
     head,
     theme: defaultTheme({
         logo: '/images/logo.png',
         logoDark: '/images/logo-dark.png',
         sidebar,
         navbar,
-        // repo: 'https://github.com/lxuan1997/iCode',
         docsRepo: 'https://github.com/lxuan1997/iCode',
         docsBranch: 'master',
         docsDir: 'docs',
         contributors: false,
-        // editLinkText: '编辑此页',
-        // lastUpdatedText: '最近更新',
     }),
     plugins: [
         // markdown 增强
@@ -45,14 +41,9 @@ export default defineUserConfig({
                 // 'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
                 // 'https://unpkg.com/@waline/emojis@1.1.0/weibo'
             ],
-            // meta: [],
-            // reaction: [
-            //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png',
-            //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png',
-            //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
-            //     'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
-            // ]
+            meta: [],
             // comment: false,
+            search: false
         }),
         // comment-Giscus
         // commentPlugin({
@@ -65,9 +56,9 @@ export default defineUserConfig({
         // docsearch
         docsearchPlugin({
             // 配置项
-            appId: 'O49ML787DQ',
-            apiKey: 'b9ad9e9ad0b1e6bdaf5ba089a825f1f3',
-            indexName: 'demo',
+            appId: '<app_id>',
+            apiKey: '<api_key>',
+            indexName: '<index>',
         }),
     ]
 })
