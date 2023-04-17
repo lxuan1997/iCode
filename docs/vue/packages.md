@@ -1,4 +1,4 @@
-# Vue 相关插件
+# 相关插件
 
 ## vue-draggable
 

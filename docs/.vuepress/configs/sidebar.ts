@@ -23,13 +23,14 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
     ],
     '/vue/': [
         {
-            text: '', // Vue
+            text: 'Vue', // Vue
             children: [
                 // '/vue/index.md',
                 '/vue/vue-router.md',
                 '/vue/vuex.md',
+                '/vue/Pinia.md',
+                '/vue/Vue.js的设计与实现',
                 '/vue/packages.md',
-                '/vue/Vue.js的设计与实现'
             ]
         }
     ],
