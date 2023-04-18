@@ -56,9 +56,10 @@ export default defineUserConfig({
         // docsearch
         docsearchPlugin({
             // 配置项
-            appId: '<app_id>',
-            apiKey: '<api_key>',
-            indexName: '<index>',
+            appId: '4L8Y7NNA9W',
+            apiKey: 'cd766f9a5a652a136b3b3ddb26e7e475',
+            indexName: 'icode',
+            // indexBase: '/iCode/'
         }),
     ]
 })
