@@ -3,13 +3,13 @@
 
 ```card
 title: fabricjs.com
-logo: /icons/fabricjs.png
+logo: https://raw.githubusercontent.com/lxuan1997/iPic/main/icons/fabricjs.png
 link: http://fabricjs.com/
 ```
 
 ```card
 title: fabricjs on GitHub
-logo: /icons/github.svg
+logo: https://raw.githubusercontent.com/lxuan1997/iPic/main/icons/github.svg
 link: https://github.com/fabricjs/fabric.js
 ```
 
@@ -17,12 +17,12 @@ link: https://github.com/fabricjs/fabric.js
 
 ```card
 title: fabricjs on Codepen
-logo: /icons/codepen.svg
+logo: https://raw.githubusercontent.com/lxuan1997/iPic/main/icons/codepen.svg
 link: https://codepen.io/tag/fabricjs
 ```
 
 ```card
 title: fabricjs on Stack Overflow
-logo: /icons/stackoverflow.svg
+logo: https://raw.githubusercontent.com/lxuan1997/iPic/main/icons/stackoverflow.svg
 link: https://stackoverflow.com/questions/tagged/fabricjs
 ```
