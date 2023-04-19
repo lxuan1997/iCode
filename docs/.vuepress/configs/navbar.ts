@@ -30,9 +30,30 @@ export const navbar: NavbarConfig = [
         link: '/nginx/'
     },
     {
-        text: 'Windows',
-        link: '/windows/'
-    },
+        text: '其他',
+        children: [
+            {
+                text: 'Windows',
+                link: '/windows/'
+            },
+            {
+                text: 'Chrome',
+                link: '/chrome/'
+            },
+            {
+                text: 'Git',
+                link: '/git/'
+            },
+            {
+                text: 'GitHub',
+                link: '/github/'
+            },
+            {
+                text: 'Shell',
+                link: '/shell/'
+            }
+        ]
+    }
     // {
     //     text: '工具',
     //     children: [

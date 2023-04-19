@@ -1,20 +1,18 @@
---- 
-title: Vue.js设计与实现 📖
----
+# Vue.js设计与实现
 
-## 学习笔记
-
-### Chrome devtools
+## Chrome devtools
 - console.warn
 
-### dead code 永远不会被执行的代码
+## dead code 
+> 永远不会被执行的代码
 ```js
 if (false) {
   // ...
 }
 ```
 
-### Tree-Shaking 消除那些永远不会被执行的代码
+## Tree-Shaking 
+> 消除那些永远不会被执行的代码
 想要实现 Tree-Shaking，必须满足一个条件，即模块必须是 ESM（ES Module），因为 Tree-Shaking 依赖 ESM 的静态结构
 
 #### `__DEV__`
@@ -29,7 +27,7 @@ JavsScript本身是动态语言，想要静态分析哪些代码是 dead code �
 手动在代码前添加注释 `/*#__PURE__*/`，rollup.js、webpack等工具就能识别此段代码不会产生副作用
 
 
-### 框架产物
+## 框架产物
 
 #### 根据环境区分
 - 开发环境
@@ -65,6 +63,6 @@ rollup.js 或者 webpack，在寻找资源时，如果package.json 中存在 mod
 - 在Node.js 中通过 require 引用 - CommonJS
 
 
-### 特性开关
+## 特性开关
 
-### 错误处理
+## 错误处理

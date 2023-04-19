@@ -7,7 +7,7 @@ import {defaultTheme} from 'vuepress'
 export default defineUserConfig({
     base: '/iCode/',
     lang: 'zh-CN',
-    title: 'Hello Code',
+    title: 'iCode',
     description: ' ',
     head,
     theme: defaultTheme({
@@ -20,6 +20,11 @@ export default defineUserConfig({
         docsDir: 'docs',
         contributors: false,
     }),
+    markdown: {
+        code: {
+            lineNumbers: false
+        }
+    },
     plugins: [
         // markdown 增强
         mdEnhancePlugin({
@@ -42,7 +47,7 @@ export default defineUserConfig({
                 // 'https://unpkg.com/@waline/emojis@1.1.0/weibo'
             ],
             meta: [],
-            // comment: false,
+            comment: false,
             search: false
         }),
         // comment-Giscus
@@ -53,13 +58,12 @@ export default defineUserConfig({
         //     category: 'General',
         //     categoryId: 'DIC_kwDOHsAibc4CVvDA'
         // }),
-        // docsearch
+        // docsearch 文档搜索
         docsearchPlugin({
             // 配置项
             appId: '4L8Y7NNA9W',
             apiKey: 'cd766f9a5a652a136b3b3ddb26e7e475',
             indexName: 'icode',
-            // indexBase: '/iCode/'
         }),
     ]
 })

@@ -1,9 +1,5 @@
----
-title: Nginx
----
-
-## Tips
-- nginx 有 if 没有 else
+# Tips
+> nginx 有 if 没有 else
 
 ## 反向代理到 Apache
 nginx 监听 8000 端口，转发到 Apache 8081 端口

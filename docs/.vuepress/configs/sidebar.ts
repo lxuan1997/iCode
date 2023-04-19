@@ -3,7 +3,7 @@ import type {SidebarConfig, SidebarConfigArray, SidebarConfigObject} from "vuepr
 export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject | SidebarConfig = {
     '/javascript/': [
         {
-            text: '', // JavaScript
+            text: 'JavaScript', // JavaScript
             // collapsible: true,
             children: [
                 '/javascript/tips.md',
@@ -13,7 +13,7 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
     ],
     '/css/': [
         {
-            text: '', // CSS
+            text: 'CSS', // CSS
             // collapsible: true,
             children: [
                 // '/css/index.md',
@@ -23,20 +23,32 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
     ],
     '/vue/': [
         {
-            text: 'Vue', // Vue
+            text: 'Vue',
             children: [
-                // '/vue/index.md',
+                '/vue/index.md',
                 '/vue/vue-router.md',
                 '/vue/vuex.md',
                 '/vue/Pinia.md',
-                '/vue/Vue.js的设计与实现',
                 '/vue/packages.md',
+            ]
+        },
+        {
+            text: 'Vue Book',
+            children: [
+                '/vue/Vue.js的设计与实现',
+            ]
+        },
+        {
+            text: 'Vue Tip & Bug', // Vue Tip
+            children: [
+                '/vue/tips.md',
+                '/vue/bugs.md'
             ]
         }
     ],
     '/wx/': [
         {
-            text: '', // 微信小程序
+            text: '微信小程序',
             children: [
                 '/wx/index.md',
             ]
@@ -44,7 +56,7 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
     ],
     '/echarts/': [
         {
-            text: '', // Echarts
+            text: 'Echarts',
             children: [
                 '/echarts/index.md',
                 '/echarts/BMap.md',
@@ -53,7 +65,7 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
     ],
     '/nginx/': [
         {
-            text: '', // Nginx
+            text: 'Nginx',
             children: [
                 '/nginx/index.md',
             ]
@@ -68,49 +80,47 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
             ]
         }
     ],
-    '/tools/git/': [
-        {
-            text: 'Git',
-            children: [
-                '/tools/git/README.md',
-                '/tools/git/common-commands.md',
-                '/tools/git/common-actions.md',
-                '/tools/git/IDEA.md'
-            ]
-        }
-    ],
-    '/tools/github/': [
-        {
-            text: 'Github',
-            children: [
-                '/tools/github/README.md',
-                '/tools/github/github-pages.md',
-                '/tools/github/github-actions.md',
-            ]
-        }
-    ],
-    '/tools/shell/': [
-        {
-            text: 'Shell',
-            children: [
-                '/tools/shell/README.md',
-            ]
-        }
-    ],
-    '/tools/chrome/': [
-        {
-            text: 'Chrome',
-            children: [
-                '/tools/chrome/README.md',
-            ]
-        }
-    ],
-    '/system/windows': [
+    '/windows/': [
         {
             text: 'Windows',
             children: [
-                '/system/windows/README.md'
+                '/windows/index.md'
             ]
         }
-    ]
+    ],
+    '/git/': [
+        {
+            text: 'Git',
+            children: [
+                '/git/index.md',
+                '/git/commands.md',
+                '/git/actions.md',
+                '/git/IDEA.md'
+            ]
+        }
+    ],
+    '/github/': [
+        {
+            text: 'GitHub',
+            children: [
+                '/github/index.md',
+                '/github/github-pages.md',
+                '/github/github-actions.md',
+            ]
+        }
+    ],
+    '/shell/': [
+        {
+            text: 'Shell',
+            children: [
+                '/shell/index.md',
+            ]
+        }
+    ],
+    '/chrome/': [
+        {
+            text: 'Chrome',
+            children: []
+        }
+    ],
 }

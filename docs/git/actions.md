@@ -1,7 +1,7 @@
 # 一些操作
 
 ## 将本地仓库上传至git
-```BASH
+```shell
 # 本地仓库初始化
 git init
 
