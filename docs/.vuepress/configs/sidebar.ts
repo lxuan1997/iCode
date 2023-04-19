@@ -27,9 +27,9 @@ export const sidebar: false | 'auto' | SidebarConfigArray | SidebarConfigObject 
             children: [
                 '/vue/index.md',
                 '/vue/vue-router.md',
-                '/vue/vuex.md',
                 '/vue/Pinia.md',
-                '/vue/packages.md',
+                '/vue/vuex.md',
+                // '/vue/packages.md',
             ]
         },
         {

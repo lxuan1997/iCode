@@ -1,12 +1,28 @@
 # 简介
+**Fabric.js** is a powerful and simple Javascript **HTML5 canvas library**
 
-**Fabric.js** is a powerful and simple **Javascript HTML5 canvas library**
+```card
+title: fabricjs.com
+logo: /icons/fabricjs.png
+link: http://fabricjs.com/
+```
 
-![image](https://github.com/fabricjs/fabric.js/raw/master/lib/screenshot.png)
+```card
+title: fabricjs on GitHub
+logo: /icons/github.svg
+link: https://github.com/fabricjs/fabric.js
+```
 
-[官网](http://fabricjs.com/)
+<br>
 
-[github](https://github.com/fabricjs/fabric.js)
+```card
+title: fabricjs on Codepen
+logo: /icons/codepen.svg
+link: https://codepen.io/tag/fabricjs
+```
 
-[codepen](https://codepen.io/tag/fabricjs)
-
+```card
+title: fabricjs on Stack Overflow
+logo: /icons/stackoverflow.svg
+link: https://stackoverflow.com/questions/tagged/fabricjs
+```

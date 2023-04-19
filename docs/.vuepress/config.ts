@@ -32,7 +32,9 @@ export default defineUserConfig({
             vuePlayground: true,
             // 代码块分组
             codetabs: true,
-            tasklist: true
+            tasklist: true,
+            // 卡片
+            card: true
         }),
         // comment-Waline
         commentPlugin({

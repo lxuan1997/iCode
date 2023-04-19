@@ -1,4 +1,7 @@
-# Pinia
+---
+title: Pinia
+---
+# Pinia 
 
 ## Pinia是什么？
 
