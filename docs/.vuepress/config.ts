@@ -2,13 +2,21 @@ import {defineUserConfig} from 'vuepress'
 import {mdEnhancePlugin} from "vuepress-plugin-md-enhance";
 import {commentPlugin} from "vuepress-plugin-comment2";
 import {docsearchPlugin} from '@vuepress/plugin-docsearch';
+import {sitemapPlugin} from "vuepress-plugin-sitemap2";
+import {copyCodePlugin} from "vuepress-plugin-copy-code2";
+import {componentsPlugin} from "vuepress-plugin-components";
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
 import {sidebar, navbar, head} from './configs'
 import {defaultTheme} from 'vuepress'
+import {getDirname, path} from '@vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
+
 export default defineUserConfig({
     base: '/iCode/',
     lang: 'zh-CN',
     title: 'iCode',
-    description: ' ',
+    description: '',
     head,
     theme: defaultTheme({
         logo: '/images/logo.png',
@@ -19,6 +27,9 @@ export default defineUserConfig({
         docsBranch: 'master',
         docsDir: 'docs',
         contributors: false,
+        themePlugins: {
+            backToTop: false
+        }
     }),
     markdown: {
         code: {
@@ -34,24 +45,23 @@ export default defineUserConfig({
             codetabs: true,
             tasklist: true,
             // 卡片
-            card: true
+            card: true,
         }),
         // comment-Waline
-        commentPlugin({
-            provider: "Waline",
-            serverURL: 'https://waline-for-i-code-k0ivbhlhv-lxuan1997.vercel.app/',
-            emoji: [
-                // 'https://unpkg.com/@waline/emojis@1.1.0/alus',
-                // 'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
-                // 'https://unpkg.com/@waline/emojis@1.1.0/qq',
-                'https://unpkg.com/@waline/emojis@1.1.0/bmoji',
-                // 'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
-                // 'https://unpkg.com/@waline/emojis@1.1.0/weibo'
-            ],
-            meta: [],
-            comment: false,
-            search: false
-        }),
+        // commentPlugin({
+        //     provider: "Waline",
+        //     serverURL: 'https://waline-for-i-code-k0ivbhlhv-lxuan1997.vercel.app/',
+        //     emoji: [
+        //         // 'https://unpkg.com/@waline/emojis@1.1.0/alus',
+        //         // 'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+        //         // 'https://unpkg.com/@waline/emojis@1.1.0/qq',
+        //         'https://unpkg.com/@waline/emojis@1.1.0/bmoji',
+        //         // 'https://unpkg.com/@waline/emojis@1.1.0/tw-emoji',
+        //         // 'https://unpkg.com/@waline/emojis@1.1.0/weibo'
+        //     ],
+        //     meta: [],
+        //     search: false
+        // }),
         // comment-Giscus
         // commentPlugin({
         //     provider: 'Giscus',
@@ -66,6 +76,20 @@ export default defineUserConfig({
             appId: '4L8Y7NNA9W',
             apiKey: 'cd766f9a5a652a136b3b3ddb26e7e475',
             indexName: 'icode',
+        }),
+        copyCodePlugin({}),
+        sitemapPlugin({
+            hostname: 'https://lxuan1997.github.io/iCode/'
+        }),
+        componentsPlugin({
+            components: [],
+            rootComponents: {
+                backToTop: true
+            }
+        }),
+        // 注册组件
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components')
         }),
     ]
 })
