@@ -1,0 +1,1 @@
+import{_ as a,p as t,q as c,R as e,t as n}from"./framework-9bc128ed.js";const s={},r=e("h1",{id:"canvas",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#canvas","aria-hidden":"true"},"#"),n(" canvas")],-1),o=[r];function _(d,i){return t(),c("div",null,o)}const l=a(s,[["render",_],["__file","index.html.vue"]]);export{l as default};

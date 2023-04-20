@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d7a4cff6","path":"/windows/","title":"杂","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"host文件位置","slug":"host文件位置","link":"#host文件位置","children":[]}],"git":{"updatedTime":1681986102000},"filePathRelative":"windows/index.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-d8790790","path":"/shell/","title":"一些基础命令","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681888335000},"filePathRelative":"shell/index.md"}');export{e as data};

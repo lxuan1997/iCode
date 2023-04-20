@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-28e18b11","path":"/fabric/","title":"简介","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681903269000},"filePathRelative":"fabric/index.md"}');export{e as data};

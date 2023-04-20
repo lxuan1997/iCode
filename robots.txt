@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://lxuan1997.github.io/iCode/iCode/sitemap.xml

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-744e35e2","path":"/vue/","title":"生态系统","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681903269000},"filePathRelative":"vue/index.md"}');export{e as data};

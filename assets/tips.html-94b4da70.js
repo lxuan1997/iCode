@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-16c178ff","path":"/vue/tips.html","title":"Tips","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"使用 keep-alive 和 路由的 meta 属性 进行页面缓存","slug":"使用-keep-alive-和-路由的-meta-属性-进行页面缓存","link":"#使用-keep-alive-和-路由的-meta-属性-进行页面缓存","children":[]}],"git":{"updatedTime":1681888335000},"filePathRelative":"vue/tips.md"}');export{e as data};

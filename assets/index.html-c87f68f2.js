@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-ea4cae84","path":"/canvas/","title":"canvas","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681291606000},"filePathRelative":"canvas/index.md"}');export{a as data};

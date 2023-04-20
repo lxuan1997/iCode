@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6c67d393","path":"/github/","title":"GitHub Tips","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"按文件内容搜索代码","slug":"按文件内容搜索代码","link":"#按文件内容搜索代码","children":[]}],"git":{"updatedTime":1681888335000},"filePathRelative":"github/index.md"}');export{t as data};

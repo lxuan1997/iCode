@@ -1,0 +1,1 @@
+import{_ as t,p as s,q as a,R as e,t as c}from"./framework-9bc128ed.js";const o={},n=e("h1",{id:"hello-css",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#hello-css","aria-hidden":"true"},"#"),c(" Hello CSS")],-1),r=[n];function l(_,d){return s(),a("div",null,r)}const h=t(o,[["render",l],["__file","index.html.vue"]]);export{h as default};

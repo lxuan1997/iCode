@@ -1,0 +1,2 @@
+import{_ as e,p as t,q as a,a1 as s}from"./framework-9bc128ed.js";const d={},r=s(`<h1 id="杂" tabindex="-1"><a class="header-anchor" href="#杂" aria-hidden="true">#</a> 杂</h1><h2 id="host文件位置" tabindex="-1"><a class="header-anchor" href="#host文件位置" aria-hidden="true">#</a> host文件位置</h2><div class="language-text" data-ext="text"><pre class="language-text"><code>C:\\windows\\system32\\drivers\\etc
+</code></pre></div>`,3),c=[r];function n(o,i){return t(),a("div",null,c)}const _=e(d,[["render",n],["__file","index.html.vue"]]);export{_ as default};
